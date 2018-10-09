@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <!--下面两个属性都可以设置actionbar的高度-->
+        <!--<item name="android:actionBarSize">100dp</item>-->
+        <item name="actionBarSize">45dp</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <!--这个属性没用-->
+        <!--<item name="android:background">@color/white</item>-->
+        <item name="background">@color/colorPrimaryDark</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:padding">0sp</item>
+        <!--在这里设置actionbarsize属性没用-->
+        <!--<item name="actionBarSize">136dip</item>-->
+    </style>
+</resources>

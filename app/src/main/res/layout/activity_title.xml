@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!--整个头部布局-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        tools:ignore="UselessParent">
+        <!--左边部分包括返回图标加文字-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/title_backImg_left"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/back"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/title_tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/title_backImg_left"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/title_img_left"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/todo"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <!--中间标题-->
+        <TextView
+            android:id="@+id/title_tv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:ignore="RelativeOverlap" />
+        <!--中间两个切换-->
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/draw_lin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_car"
+                android:background="@drawable/draw_lin_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="车队任务"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/tv_driver"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="司机任务"
+                android:textColor="@color/colorGray"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!--右边部分 包括右边文字加右边图标-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            tools:ignore="RelativeOverlap">
+
+            <ImageView
+                android:id="@+id/title_img_right"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/todo"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/title_tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

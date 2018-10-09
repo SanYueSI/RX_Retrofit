@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RefactoringRetrofit</string>
+    <string name="home_page">首页</string>
+    <string name="todo">TODO</string>
+    <string name="title_back">返回</string>
+
+    <string name="title_news">新闻</string>
+    <string name="title_other">其他</string>
+    <string name="title_photo">图片</string>
+    <string name="title_video">视频</string>
+    <string name="title_media">头条号</string>
+</resources>
